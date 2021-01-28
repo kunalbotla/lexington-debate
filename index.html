@@ -8,6 +8,32 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
 
+  <style>
+    #overlay {
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    #text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: white;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      font-family: Merriweather, Helvetica, sans-serif, Arial;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -32,12 +58,39 @@
       <h3>Lexington Debate Insitute</h3>
       <p>The Lexington Debate Institute is back! Information can be found at <a href="//lexdebateinstitute.com">lexdebateinstitute.com</a>.</p>
     </span>
+    <span>
+      <button onclick="on()">Click (this needs a name)</button>
+    </span>
     <!--
     <span><p><small>
       © 2021 Kunal Botla and Backers of Lexington Debate, Inc. All Rights Reserved.
     </small></p></span>
     -->
   </div>
+
+  <div id="overlay" onclick="off()">
+    <div id="text">Here's a list of what needs to be changed here: <br><br> (1) update content to whatever is current <br>(2) update domain to lhsdebate.org once accessed <br>(3) use this button for legal discloures or create more for pop-up details
+      <br>(4) this is pretty hard to read so something should be changed<h3>Legal</h3>
+      <p>© 2020-<script>
+          document.write(new Date().getFullYear())
+        </script> Kunal Botla and Backers of Lexington Debate, Inc. All Rights Reserved.</p>
+    </div>
+  </div>
+
+  <div style="padding:20px">
+
+  </div>
+
+  <script>
+    function on() {
+      document.getElementById("overlay").style.display = "block";
+    }
+
+    function off() {
+      document.getElementById("overlay").style.display = "none";
+    }
+  </script>
+
 </body>
 
 </html>
