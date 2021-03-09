@@ -52,14 +52,24 @@
     </span>
     <span>
       <h3>Donate</h3>
-      <p>Donate by sending a check here...</p>
+      <p>Donate by PayPal or Card</p>
+      <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="hosted_button_id" value="5D6Y2QB2JCWB8" />
+        <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" target="_blank"/>
+        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+      <p>Donate by sending a check to Backers of Lexington Debate, Inc., 20 Victory Garden Way, Lexington, MA 02420.</p>
     </span>
     <span>
       <h3>Lexington Debate Insitute</h3>
       <p>The Lexington Debate Institute is back! Information can be found at <a href="//lexdebateinstitute.com">lexdebateinstitute.com</a>.</p>
     </span>
     <span>
-      <button onclick="on()">Click (this needs a name)</button>
+      <h3>Parent Guidelines</h3>
+      <p><a href="/BOLD Parent Guidelines 2020-2021.pdf">Download the 2020-2021 Lexington Debate Parent Guidelines</a></p>
+    </span>
+    <span>
+      <button onclick="on()">Additional Details</button>
     </span>
     <!--
     <span><p><small>
@@ -71,7 +81,7 @@
   <div id="overlay" onclick="off()">
     <div id="text">Here's a list of what needs to be changed here: <br><br> (1) update content to whatever is current <br>(2) update domain to lhsdebate.org once accessed <br>(3) use this button for legal discloures or create more for pop-up details
       <br>(4) this is pretty hard to read so something should be changed<h3>Legal</h3>
-      <p>© 2020-<script>
+      <p>© <script>
           document.write(new Date().getFullYear())
         </script> Kunal Botla and Backers of Lexington Debate, Inc. All Rights Reserved.</p>
     </div>
